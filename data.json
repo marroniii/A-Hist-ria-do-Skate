@@ -1,0 +1,65 @@
+[
+{
+    "nome":"Surf de Calçada",
+    "descricao":"O surf de calçada, também conhecido como skate, é um esporte que",
+    "ano": 1960,
+    "link":"https://indalosurfer.com/pt/smartblog/13_.html",
+    "imagem": "imagens/1960.jpg"
+},
+{
+    "nome":"Tail inventado",
+    "descricao":"O tail, parte traseira do shape do skate, foi inventado por Larry Stevenson em 1969.",
+    "ano": 1970,
+    "link":"https://skatecuriosidade.com.br/curiosidade-skatisticas/o-kick-tail",
+    "imagem": "imagens/1970.jpg"
+},
+{
+    "nome": "Rodas de Uretano",
+    "descricao": "Frank Nasworthy inventa as rodas de uretano (Cadillac Wheels), revolucionando o esporte com mais aderência e velocidade.",
+    "ano": 1972,
+    "link": "https://localzonly.wordpress.com/2011/06/23/frank-nasworthy-e-o-uretano/",
+    "imagem": "imagens/1972.jpg"
+},
+{
+    "nome": "Invenção do Ollie",
+    "descricao": "Alan 'Ollie' Gelfand inventa o 'Ollie', a manobra base para a maioria dos truques de skate modernos, permitindo saltar sem usar as mãos.",
+    "ano": 1978,
+    "link": "https://cemporcentoskate.com.br/blogs/as-origens-do-ollie/",
+    "imagem": "imagens/1978.jpg"
+},
+{
+    "nome": "A Era do Vert",
+    "descricao": "Os anos 80 são dominados pelo skate vertical. Skatistas como Tony Hawk e Steve Caballero se tornam ícones globais.",
+    "ano": 1980,
+    "link": "https://revistas.ufrj.br/index.php/Recorde/article/view/14333",
+    "imagem": "imagens/1980.jpg"
+},
+{
+    "nome": "Ascensão do Street Skate",
+    "descricao": "O skate de rua ganha popularidade nos anos 90, com foco em manobras em corrimãos, escadas e outros obstáculos urbanos.",
+    "ano": 1990,
+    "link": "https://www.tricks.com.br/blog/como-surgiu-skate-street/",
+    "imagem": "imagens/1990.jpg"
+},
+{
+    "nome": "Profissionalização com Street League (SLS)",
+    "descricao": "A Street League Skateboarding (SLS), criada por Rob Dyrdek, eleva o nível das competições de skate de rua com um formato inovador e grandes premiações, transformando skatistas em atletas profissionais reconhecidos mundialmente.",
+    "ano": 2010,
+    "link": "https://www.tricks.com.br/blog/street-league-skateboarding-sls/",
+    "imagem": "imagens/2010.jpg"
+},
+{
+    "nome": "Estreia nas Olimpíadas",
+    "descricao": "O skate faz sua estreia histórica como esporte olímpico nos Jogos de Tóquio 2020 (realizados em 2021), consolidando seu status como um esporte global e inspirando uma nova geração de atletas.",
+    "ano": 2021,
+    "link": "https://www.youtube.com/watch?v=td9zMPspHiQ",
+    "imagem": "imagens/2021.jpg"
+},
+{
+    "nome": "Consolidação Olímpica e Novos Ídolos",
+    "descricao": "Após o sucesso em Tóquio, o skate se consolida para os Jogos de Paris 2024. Atletas da nova geração, como a brasileira Rayssa Leal, tornam-se campeões mundiais e ícones globais do esporte.",
+    "ano": 2022,
+    "link": "https://oglobo.globo.com/esportes/noticia/2022/11/rayssa-leal-e-campea-mundial-de-skate.ghtml",
+    "imagem": "imagens/2022.jpg"
+}
+]
