@@ -26,11 +26,11 @@ Interatividade: Efeitos de pairaro
 code
 Código
 📁 /
-├── 📄 index.html      # Estrutura principal da página
-├── 🎨 style.css       # Estilos visuais e responsividade
-├── 📜 script.js       # Lógica de consumo de dados e renderização
-├── 📦 data.json       # Base de dados com os eventos históricos
-└── 📁 imagens/        # (Opcional) Pasta para armazenar as imagens dos eventos
+├── 📄 index.html      
+├── 🎨 style.css       
+├── 📜 script.js       
+├── 📦 data.json       
+└── 📁 imagens/        
 🔧 Como Executar o Projeto
 Como o projeto utiliza a API Fetch para carregar o arquivo data.json, navegadores modernos podem bloquear a requisição por
 segurança (CORS) se você abrir o arquivo index.html diretamente pelo sistema de arquivos (protocolo arquivo://).
