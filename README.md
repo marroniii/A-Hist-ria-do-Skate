@@ -1,9 +1,14 @@
 🛹 
 
 Uma aplicação web interativa e responsiva que apresenta os momentos mais marcantes da história do skate,
+
 desde suas origens como "Surf de Calçada" até sua consolidação como esporte olímpico. O projeto utiliza dados dinâmicos para gerar uma linha do tempo visualmente atrativa.
+
 📸 Demonstração
-(Sugestão: Adicione aqui um print da tela ou um GIF do projeto rodando)
+
+(<img width="842" height="596" alt="a história do skate" src="https://github.com/user-attachments/assets/9fa426f4-5eea-4647-aac5-aae2c7f6ee18" />
+)
+
 ![alt text](<img width="842" height="596" alt="a história do skate" src="https://github.com/user-attachments/assets/fcdea818-b195-485e-920d-fb51e39d9c6c" />)
 🚀 Tecnologias Utilizadas
 O projeto foi desenvolvido utilizando tecnologias web nativas (Vanilla), focando em performance e semântica:
