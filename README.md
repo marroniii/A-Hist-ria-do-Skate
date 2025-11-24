@@ -1,4 +1,5 @@
 🛹 
+
 Uma aplicação web interativa e responsiva que apresenta os momentos mais marcantes da história do skate,
 desde suas origens como "Surf de Calçada" até sua consolidação como esporte olímpico. O projeto utiliza dados dinâmicos para gerar uma linha do tempo visualmente atrativa.
 📸 Demonstração
