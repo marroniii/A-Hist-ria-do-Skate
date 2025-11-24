@@ -22,9 +22,10 @@ Carregamento Dinâmico: Evento Os
 Design Responsivo: O layout da linha do tempo se adapta automaticamente a desktops, tablets e smartphones.
 Tema Escuro:
 Interatividade: Efeitos de pairaro
+
 📂 Estrutura do Projeto
-code
-Código
+
+
 📁 /
 ├── 📄 index.html      
 ├── 🎨 style.css       
