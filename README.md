@@ -48,26 +48,39 @@ Interatividade: Efeitos de pairaro
 ├── 🎨 style.css       
 ├── 📜 script.js       
 ├── 📦 data.json       
-└── 📁 imagens/        
+└── 📁 imagens/     
+
 🔧 Como Executar o Projeto
+
 Como o projeto utiliza a API Fetch para carregar o arquivo data.json, navegadores modernos podem bloquear a requisição por
 segurança (CORS) se você abrir o arquivo index.html diretamente pelo sistema de arquivos (protocolo arquivo://).
+
 Para rodar corretamente, você precisa de um servidor local simples.
+
 Opção 1: Extensão Live Server (VS Code) - Recomendado
+
 Abra a pasta do projeto no VS Code.
+
 Instale a extensão Servidor ao vivo.
+
 Clique com o botão direito no index.html e selecione "Abrir com servidor ao vivo".
+
 Sobre
+
 Se você tem Python instalado, abra o terminal na pasta do projeto e rode:
+
 code
 Bash
 # Python 3.x
 python -m http.server
+
 Acesse http://localhost:8000 no seu navegador.
+
 🤝 Como Contribuir
 Faça um garfo do projeto.
 Crie uma nova branch com as suas alterações: git checkout -b my-feature
 Salve as alterações e crie uma mensagem de commit contando o que você fez: git commit -m "feature: Meu novo recurso"
 Envie as suas alterações: git push origin my-feature
 Abra um Solicitação de Pull Request.
+
 Feito com 🛹 e 💻 por [Marroniii]
