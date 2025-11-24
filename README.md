@@ -1,5 +1,6 @@
 🛹 
-Uma aplicação web interativa e responsiva que apresenta os momentos mais marcantes da história do skate, desde suas origens como "Surf de Calçada" até sua consolidação como esporte olímpico. O projeto utiliza dados dinâmicos para gerar uma linha do tempo visualmente atrativa.
+Uma aplicação web interativa e responsiva que apresenta os momentos mais marcantes da história do skate,
+desde suas origens como "Surf de Calçada" até sua consolidação como esporte olímpico. O projeto utiliza dados dinâmicos para gerar uma linha do tempo visualmente atrativa.
 📸 Demonstração
 (Sugestão: Adicione aqui um print da tela ou um GIF do projeto rodando)
 ![alt text](<img width="842" height="596" alt="a história do skate" src="https://github.com/user-attachments/assets/fcdea818-b195-485e-920d-fb51e39d9c6c" />)
@@ -30,7 +31,8 @@ Código
 ├── 📦 data.json       # Base de dados com os eventos históricos
 └── 📁 imagens/        # (Opcional) Pasta para armazenar as imagens dos eventos
 🔧 Como Executar o Projeto
-Como o projeto utiliza a API Fetch para carregar o arquivo data.json, navegadores modernos podem bloquear a requisição por segurança (CORS) se você abrir o arquivo index.html diretamente pelo sistema de arquivos (protocolo arquivo://).
+Como o projeto utiliza a API Fetch para carregar o arquivo data.json, navegadores modernos podem bloquear a requisição por
+segurança (CORS) se você abrir o arquivo index.html diretamente pelo sistema de arquivos (protocolo arquivo://).
 Para rodar corretamente, você precisa de um servidor local simples.
 Opção 1: Extensão Live Server (VS Code) - Recomendado
 Abra a pasta do projeto no VS Code.
