@@ -9,10 +9,12 @@ desde suas origens como "Surf de Calçada" até sua consolidação como esporte 
 (<img width="842" height="596" alt="a história do skate" src="https://github.com/user-attachments/assets/9fa426f4-5eea-4647-aac5-aae2c7f6ee18" />
 )
 
-![alt text](<img width="842" height="596" alt="a história do skate" src="https://github.com/user-attachments/assets/fcdea818-b195-485e-920d-fb51e39d9c6c" />)
 🚀 Tecnologias Utilizadas
+
 O projeto foi desenvolvido utilizando tecnologias web nativas (Vanilla), focando em performance e semântica:
+
 HTML5: Estruturação semântica do conteúdo.
+
 CSS3:
 Flexbox para layout.
 Variáveis CSS (:raiz) para gerenciamento de tema (Dark Mode).
