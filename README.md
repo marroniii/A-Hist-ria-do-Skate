@@ -16,15 +16,25 @@ O projeto foi desenvolvido utilizando tecnologias web nativas (Vanilla), focando
 HTML5: Estruturação semântica do conteúdo.
 
 CSS3:
+
 Flexbox para layout.
+
 Variáveis CSS (:raiz) para gerenciamento de tema (Dark Mode).
+
 Consultas de mídia para design responsivo
+
 Animações (@keyframes) para entrada suave dos elementos.
+
 JavaScript (ES6+):
+
 API Fetch: Para consumo assíncrono do arquivo de dados (data.json).
+
 Manipulação do DOM: Renderi
+
 JSON: Armazenamento estruturado dos dados históricos.
+
 ✨ Funcionalidades
+
 Carregamento Dinâmico: Evento Os
 Design Responsivo: O layout da linha do tempo se adapta automaticamente a desktops, tablets e smartphones.
 Tema Escuro:
