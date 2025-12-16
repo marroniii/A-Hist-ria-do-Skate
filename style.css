@@ -301,6 +301,24 @@ body {
     color: var(--gray);
     line-height: 1.7;
     font-size: clamp(0.95rem, 2vw, 1.05rem);
+    margin-bottom: var(--spacing-sm);
+}
+
+.timeline-link {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    padding-top: var(--spacing-xs);
+    border-bottom: 2px solid transparent;
+}
+
+.timeline-link:hover {
+    color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    transform: translateX(5px);
 }
 
 /* ========================================
@@ -373,7 +391,7 @@ body {
     background: var(--dark-bg);
     color: var(--text-light);
     text-align: center;
-    padding: var(--spacing-md);
+    padding: var(--spacing-lg) 0;
 }
 
 /* ========================================
