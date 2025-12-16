@@ -1,58 +1,75 @@
-// Aguarda o conteúdo da página carregar completamente
-document.addEventListener('DOMContentLoaded', () => {
-    // Função para carregar os dados do JSON e construir a linha do tempo
-    async function carregarLinhaDoTempo() {
-        try {
-            const resposta = await fetch("data.json");
-            if (!resposta.ok) {
-                throw new Error(`Erro na rede: ${resposta.statusText}`);
-            }
-            const dados = await resposta.json();
-            renderizarLinhaDoTempo(dados);
-        } catch (error) {
-            // Exibe um erro no console e na página caso o JSON não seja carregado
-            console.error('Erro ao carregar a linha do tempo:', error);
-            const timelineContainer = document.getElementById('timeline-container');
-            timelineContainer.innerHTML = `<p style="text-align: center; color: red;">Não foi possível carregar os dados da linha do tempo.</p>`;
+// Menu Toggle para Mobile
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu');
+
+// Abrir/Fechar menu mobile
+menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+});
+
+// Fechar menu ao clicar em um link
+const navLinks = document.querySelectorAll('.nav-menu a');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        menuToggle.classList.remove('active');
+    });
+});
+
+// Smooth scroll para navegação
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            const headerOffset = 70;
+            const elementPosition = target.offsetTop;
+            const offsetPosition = elementPosition - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
         }
+    });
+});
+
+// Animação de entrada dos elementos da timeline
+const observerOptions = {
+    threshold: 0.2,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Aplicar animação aos itens da timeline
+document.addEventListener('DOMContentLoaded', () => {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    
+    timelineItems.forEach(item => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(30px)';
+        item.style.transition = 'all 0.6s ease';
+        observer.observe(item);
+    });
+});
+
+// Mudar cor do header ao fazer scroll
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 100) {
+        header.style.background = 'rgba(26, 26, 46, 0.95)';
+        header.style.backdropFilter = 'blur(10px)';
+    } else {
+        header.style.background = 'var(--dark-bg)';
+        header.style.backdropFilter = 'none';
     }
-
-    // Função para renderizar os itens na linha do tempo
-    function renderizarLinhaDoTempo(dados) {
-        const timelineContainer = document.getElementById('timeline-container');
-        timelineContainer.innerHTML = ""; // Limpa o container
-
-        // Garante que os dados estão ordenados por ano
-        const dadosOrdenados = dados.sort((a, b) => a.ano - b.ano);
-
-        // Itera sobre cada evento e cria o HTML correspondente
-        dadosOrdenados.forEach((item, index) => {
-            // Alterna entre 'left' e 'right' para o posicionamento
-            const side = index % 2 === 0 ? 'left' : 'right';
-
-            // Cria o elemento div para o item da linha do tempo
-            const timelineItem = document.createElement('div');
-            timelineItem.className = `timeline-item ${side}`;
-
-            // Cria o conteúdo interno do item
-            // Adiciona a tag <img> se a propriedade 'imagem' existir no item
-            const imagemHtml = item.imagem ? `<img src="${item.imagem}" alt="${item.nome}" class="timeline-image" loading="lazy">` : '';
-
-            timelineItem.innerHTML = `
-                <div class="content">
-                    ${imagemHtml}
-                    <h2>${item.ano}</h2>
-                    <h3>${item.nome}</h3>
-                    <p>${item.descricao}</p>
-                    <a href="${item.link}" target="_blank" rel="noopener noreferrer">Saiba Mais</a>
-                </div>
-            `;
-
-            // Adiciona o item criado ao container da linha do tempo
-            timelineContainer.appendChild(timelineItem);
-        });
-    }
-
-    // Chama a função para carregar os dados assim que o script for executado
-    carregarLinhaDoTempo();
 });
