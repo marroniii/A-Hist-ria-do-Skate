@@ -356,6 +356,13 @@ body {
 .social-card p {
     color: var(--gray);
     font-size: 1rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.link-text {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.95rem;
 }
 
 /* ========================================
